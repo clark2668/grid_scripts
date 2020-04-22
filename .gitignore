@@ -1,2 +1,3 @@
 # files we mark with the trash designator should be ignored
 *trash*
+dagman.dag.*
