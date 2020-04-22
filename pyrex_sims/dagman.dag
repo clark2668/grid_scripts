@@ -1,0 +1,4 @@
+JOB job1 job.sub
+VARS job1 ENERGY="570" NUMBER="10"
+
+CONFIG dagman.config

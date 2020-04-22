@@ -1,0 +1,16 @@
+log = pyrex.$(ENERGY).$(Process).log
+output = pyrex.$(ENERGY).$(Process).out
+error = pyrex.$(ENERGY).$(Process).err
+
+request_cpus = 1
+request_memory = 4GB
+request_disk = 5GB
++OriginalTime=10800
+
+use_x509userproxy = true
+Requirements = HAS_CVMFS_icecube_opensciencegrid_org && GLIDEIN_SITE=="MSU"
+
+executable = job.sh
+arguments = $(ENERGY) $(Process)
+
+queue $(NUMBER)
