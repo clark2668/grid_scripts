@@ -5,7 +5,7 @@ error = trash/arasim.$(VERSION).$(ENERGY).$(Process).err
 request_cpus = 1
 request_memory = 4GB
 request_disk = 5GB
-+OriginalTime=600
++OriginalTime=5400
 Universe = vanilla
 getenv = true
 

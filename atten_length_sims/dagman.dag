@@ -1,73 +1,37 @@
-#JOB job1 job.sub
-#VARS job1 VERSION="new" ENERGY="16" NUMBER="500"
-
-#JOB job2 job.sub
-#VARS job2 VERSION="new" ENERGY="17" NUMBER="500"
-
-#JOB job3 job.sub
-#VARS job3 VERSION="new" ENERGY="18" NUMBER="200"
-
-#JOB job4 job.sub
-#VARS job4 VERSION="new" ENERGY="19" NUMBER="200"
-
-#JOB job5 job.sub
-#VARS job5 VERSION="new" ENERGY="20" NUMBER="200"
-
-#JOB job6 job.sub
-#VARS job6 VERSION="new" ENERGY="21" NUMBER="200"
-
-#JOB job7 job.sub
-#VARS job7 VERSION="old" ENERGY="16" NUMBER="500"
-
-#JOB job8 job.sub
-#VARS job8 VERSION="old" ENERGY="17" NUMBER="500"
-
-#JOB job9 job.sub
-#VARS job9 VERSION="old" ENERGY="18" NUMBER="200"
-
-#JOB job10 job.sub
-#VARS job10 VERSION="old" ENERGY="19" NUMBER="200"
-
-#JOB job11 job.sub
-#VARS job11 VERSION="old" ENERGY="20" NUMBER="200"
-
-#JOB job12 job.sub
-#VARS job12 VERSION="old" ENERGY="21" NUMBER="200"
-
 JOB job1 job.sub
-VARS job1 VERSION="new" ENERGY="16" NUMBER="1"
+VARS job1 VERSION="new" ENERGY="16" NUMBER="600"
 
-#JOB job2 job.sub
-#VARS job2 VERSION="new" ENERGY="17" NUMBER="1"
+JOB job2 job.sub
+VARS job2 VERSION="new" ENERGY="17" NUMBER="600"
 
-#JOB job3 job.sub
-#VARS job3 VERSION="new" ENERGY="18" NUMBER="1"
+JOB job3 job.sub
+VARS job3 VERSION="new" ENERGY="18" NUMBER="500"
 
-#JOB job4 job.sub
-#VARS job4 VERSION="new" ENERGY="19" NUMBER="1"
+JOB job4 job.sub
+VARS job4 VERSION="new" ENERGY="19" NUMBER="200"
 
-#JOB job5 job.sub
-#VARS job5 VERSION="new" ENERGY="20" NUMBER="1"
+JOB job5 job.sub
+VARS job5 VERSION="new" ENERGY="20" NUMBER="200"
 
-#JOB job6 job.sub
-#VARS job6 VERSION="new" ENERGY="21" NUMBER="1"
+JOB job6 job.sub
+VARS job6 VERSION="new" ENERGY="21" NUMBER="200"
 
-#JOB job7 job.sub
-#VARS job7 VERSION="old" ENERGY="16" NUMBER="1"
+JOB job7 job.sub
+VARS job7 VERSION="old" ENERGY="16" NUMBER="600"
 
-#JOB job8 job.sub
-#VARS job8 VERSION="old" ENERGY="17" NUMBER="1"
+JOB job8 job.sub
+VARS job8 VERSION="old" ENERGY="17" NUMBER="600"
 
-#JOB job9 job.sub
-#VARS job9 VERSION="old" ENERGY="18" NUMBER="1"
+JOB job9 job.sub
+VARS job9 VERSION="old" ENERGY="18" NUMBER="500"
 
-#JOB job10 job.sub
-#VARS job10 VERSION="old" ENERGY="19" NUMBER="1"
+JOB job10 job.sub
+VARS job10 VERSION="old" ENERGY="19" NUMBER="200"
 
-#JOB job11 job.sub
-#VARS job11 VERSION="old" ENERGY="20" NUMBER="1"
+JOB job11 job.sub
+VARS job11 VERSION="old" ENERGY="20" NUMBER="200"
 
-#JOB job12 job.sub
-#VARS job12 VERSION="old" ENERGY="21" NUMBER="1"
+JOB job12 job.sub
+VARS job12 VERSION="old" ENERGY="21" NUMBER="200"
 
 CONFIG dagman.config
