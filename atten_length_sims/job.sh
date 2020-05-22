@@ -1,4 +1,4 @@
-B1;95;0c#!/usr/bin/env bash
+#!/usr/bin/env bash
 
 version=$1
 energy=$2
