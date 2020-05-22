@@ -1,0 +1,16 @@
+log = trash/arasim.$(VERSION).$(ENERGY).$(Process).log
+output = trash/pyrex.$(VERSION).$(ENERGY).$(Process).out
+error = trash/pyrex.$(VERSION).$(ENERGY).$(Process).err
+
+request_cpus = 1
+request_memory = 4GB
+request_disk = 5GB
++OriginalTime=600
+
+use_x509userproxy = true
+Requirements = HAS_CVMFS_icecube_opensciencegrid_org && GLIDEIN_SITE=="MSU"
+
+executable = job.sh
+arguments = $(VERSION) $(ENERGY) $(Process)
+
+queue $(NUMBER)
