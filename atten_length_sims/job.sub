@@ -7,7 +7,7 @@ request_memory = 4GB
 request_disk = 5GB
 +OriginalTime=600
 Universe = vanilla
-#getenv = true
+getenv = true
 
 use_x509userproxy = true
 Requirements = HAS_CVMFS_icecube_opensciencegrid_org && GLIDEIN_SITE=="MSU"

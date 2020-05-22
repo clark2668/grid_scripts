@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+B1;95;0c#!/usr/bin/env bash
 
 version=$1
 energy=$2
@@ -12,8 +12,8 @@ echo "Index: " $index
 printf "User is: "; whoami
 printf "Host is: "; hostname
 
+source /etc/profile.d/modules.sh
 source /mnt/research/IceCube/baclark/ara/atten_length_comparison/env.sh
-#. /mnt/research/IceCube/baclark/ara/atten_length_comparison/env.sh
 
 export setup_file='/mnt/research/IceCube/baclark/ara/atten_length_comparison/sims/setups/setup_E'$energy'.txt'
 
