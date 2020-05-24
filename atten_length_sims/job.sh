@@ -16,12 +16,12 @@ source /etc/profile.d/modules.sh
 source /mnt/research/IceCube/baclark/ara/atten_length_comparison/env.sh
 
 export setup_file='/mnt/research/IceCube/baclark/ara/atten_length_comparison/sims/setups/setup_E'$energy'.txt'
+cp $setup_file $working_dir/.
 
 cd /mnt/research/IceCube/baclark/ara/atten_length_comparison/sims/$version
 
-echo $PWD
-
-./AraSim $setup_file $index $working_dir
+#./AraSim $setup_file $index $working_dir
+./AraSim $working_dir/setup_E${energy}.txt $index $working_dir
 
 cd $working_dir
 chmod -R 777 *.root
