@@ -27,4 +27,5 @@ cd $working_dir
 chmod -R 777 *.root
 chmod -R 777 *
 
-mv $working_dir/*.root /mnt/research/IceCube/baclark/ara/atten_length_comparison/output/${version}/E${energy}
+cp $working_dir/*.root /mnt/research/IceCube/baclark/ara/atten_length_comparison/output/${version}/E${energy}
+rm *.root
