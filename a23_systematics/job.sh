@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-version=$1
+sigma=$1
 energy=$2
 index=$3
 working_dir=$PWD
@@ -13,19 +13,17 @@ printf "User is: "; whoami
 printf "Host is: "; hostname
 
 source /etc/profile.d/modules.sh
-source /mnt/research/IceCube/baclark/ara/atten_length_comparison/env.sh
+source /mnt/research/IceCube/baclark/ara/a23_systematics/env.sh
 
-export setup_file='/mnt/research/IceCube/baclark/ara/atten_length_comparison/sims/setups/setup_E'$energy'.txt'
-cp $setup_file $working_dir/.
+export setup_file='/mnt/research/IceCube/baclark/ara/a23_systematics/tools/a23_4yr_diffuse_simconfigs/dAdSigma/dAdSigma_'$sigma'_A2_c1_E'$energy'.txt'
 
-cd /mnt/research/IceCube/baclark/ara/atten_length_comparison/sims/$version
+cd /mnt/research/IceCube/baclark/ara/a23_systematics/tools/AraSim
 
-#./AraSim $setup_file $index $working_dir
-./AraSim $working_dir/setup_E${energy}.txt $index $working_dir
+./AraSim $setup_file $index $working_dir
 
 cd $working_dir
 chmod -R 777 *.root
 chmod -R 777 *
 
-cp $working_dir/*.root /mnt/research/IceCube/baclark/ara/atten_length_comparison/output/${version}/E${energy}
+cp $working_dir/*.root /mnt/research/IceCube/baclark/ara/a23_systematics/outputs/dAdSigma/dAdSigma${sigma}
 rm *.root
