@@ -1,0 +1,14 @@
+JOB job1 job.sub
+VARS job1 ENERGY="17" NUMBER="500"
+
+JOB job2 job.sub
+VARS job2 ENERGY="18" NUMBER="500"
+
+JOB job3 job.sub
+VARS job3 ENERGY="19" NUMBER="500"
+
+JOB job4 job.sub
+VARS job4 ENERGY="20" NUMBER="500"
+
+
+CONFIG dagman.config

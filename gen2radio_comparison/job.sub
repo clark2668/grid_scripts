@@ -1,0 +1,19 @@
+log = trash/arasim.$(ENERGY).$(Process).log
+output = trash/arasim.$(ENERGY).$(Process).out
+error = trash/arasim.$(ENERGY).$(Process).err
+
+request_cpus = 1
+request_memory = 4GB
+request_disk = 5GB
++OriginalTime=5400
+#+OriginalTime=600
+Universe = vanilla
+getenv = true
+
+use_x509userproxy = true
+Requirements = HAS_CVMFS_icecube_opensciencegrid_org && GLIDEIN_SITE=="MSU"
+
+executable = job.sh
+arguments = $(ENERGY) $(Process)
+
+queue $(NUMBER)
