@@ -18,7 +18,7 @@ export setup_file='/mnt/research/IceCube/baclark/IceCube/work_with_jorge/compari
 
 cd /mnt/research/IceCube/baclark/IceCube/work_with_jorge/comparison_studies
 
-index=$((index+2000))
+index=$((index+4000))
 
 ./AraSim $setup_file $index $working_dir
 
