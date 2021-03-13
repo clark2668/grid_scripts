@@ -1,0 +1,19 @@
+log = trash/arasim.$(VERSION).$(ENERGY).$(NJOB).log
+output = trash/arasim.$(VERSION).$(ENERGY).$(NJOB).out
+error = trash/arasim.$(VERSION).$(ENERGY).$(NJOB).err
+
+request_cpus = 1
+request_memory = 3GB
+request_disk = 4GB
++OriginalTime=5400
+#+OriginalTime=600
+Universe = vanilla
+getenv = true
+
+use_x509userproxy = true
+Requirements = HAS_CVMFS_icecube_opensciencegrid_org && GLIDEIN_SITE=="MSU"
+
+executable = job.sh
+arguments = $(VERSION) $(ENERGY) $(NJOB)
+
+queue $(NUMBER)
